@@ -1,43 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Growth App</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Growth App</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="image/logo.png" alt="">
-                </a>
-
-            </div>
-            <div class="main-menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a class="btn btn-light" href="#">
-                            <i class="fa fa-user"></i> Log In
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <!-- Navigation -->
+  <header class="navbar">
+    <h1 class="logo">Growth<span>App</span></h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Welcome to <span>Growth App</span></h2>
+      <p>Learn to build beautiful and responsive websites using HTML, CSS, and JavaScript.</p>
+      <div class="buttons">
+        <a href="#features" class="btn primary">Learn More</a>
+        <a href="#contact" class="btn secondary">Contact</a>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/main.js"></script>
+  <!-- Features Section -->
+  <section id="features" class="cards-section">
+    <h2>Our Core Features</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Fast & Responsive</h3>
+        <p>Built with modern CSS Grid and Flexbox for smooth layouts.</p>
+      </div>
+      <div class="card">
+        <h3>Clean Design</h3>
+        <p>Minimal and beautiful interface for every device size.</p>
+      </div>
+      <div class="card">
+        <h3>Interactive</h3>
+        <p>Enhanced with lightweight JavaScript for a dynamic experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Click the button below to send us a message.</p>
+    <button id="contact-btn" class="btn primary">Say Hello 👋</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Growth App | Built by Iker Oikarinen</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
